@@ -15,7 +15,7 @@ if __name__ == '__main__':
     images = glob.glob(ag.glob, recursive=True)
     print(f'=> found {len(images)} images')
 
-    for i in range(ag.n):
+    for _ in range(ag.n):
         im = random.choice(images)
         print('<<<<<< chafa: block')
         call(['chafa', '-s', '80x24', '--symbols', 'block', im])
